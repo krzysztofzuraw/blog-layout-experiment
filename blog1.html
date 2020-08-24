@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example layout</title>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
@@ -66,11 +68,16 @@
         </ol>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore soluta quaerat ullam nesciunt numquam sit, ad aliquam libero? Tempore quibusdam praesentium unde amet quaerat nihil debitis, cupiditate magni. A!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <img class="gatsby-resp-image-image" alt="Expiration token flow" title="Expiration token flow" src="https://krzysztofzuraw.com/static/f79a01592f60e7098fbb863bbc0546d9/fcda8/token-flow.png" loading="lazy">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">import</span> <span class="token punctuation">{</span> fromUnixTime<span class="token punctuation">,</span> sub <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'date-fns'</span><span class="token punctuation">;</span>
+
+          <span class="token keyword">const</span> expirationDate <span class="token operator">=</span> <span class="token function">fromUnixTime</span><span class="token punctuation">(</span>decodedToken<span class="token punctuation">.</span>exp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">const</span> firstNotificationDate <span class="token operator">=</span> <span class="token function">sub</span><span class="token punctuation">(</span>expirationDate<span class="token punctuation">,</span> <span class="token punctuation">{</span> minutes<span class="token operator">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
         <h2>Summary</h2>
         <p>In this blog post, I’ve looked into how to setup Emotion <code class="language-text">css prop</code> with Parcel &amp; TypeScript. You can find
           an example repo on my <a href="https://github.com/krzysztofzuraw/parcel-emotion-typescript" target="_blank" rel="nofollow noopener noreferrer">github</a>.</p>

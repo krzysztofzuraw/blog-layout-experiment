@@ -155,9 +155,23 @@ time {
 
 pre,
 code {
-  font-family: SF Mono;
+  font-size: var(--s0) !important;
+  font-family: SF Mono !important;
 }
 
 pre {
   overflow: auto;
+}
+
+.gatsby-highlight {
+  max-width: calc(100vw - var(--s1));
+}
+
+ol {
+  list-style: decimal;
+  padding-left: var(--s1);
+}
+
+img {
+  width: 100%;
 }
