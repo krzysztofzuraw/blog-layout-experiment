@@ -175,3 +175,37 @@ ol {
 img {
   width: 100%;
 }
+
+.box {
+  padding: var(--s1);
+  border: 1px solid;
+  --color-light: #fff;
+  --color-dark: #000;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  cursor: pointer;
+}
+
+.box * {
+  color: inherit;
+}
+
+.box:hover {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.grid {
+  display: grid;
+  grid-gap: var(--s0);
+}
+
+.tech-stack {
+  font-style: italic;
+}
+
+@supports (width: min(250px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+}
