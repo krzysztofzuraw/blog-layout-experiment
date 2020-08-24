@@ -88,6 +88,10 @@ h2 {
   font-weight: 300;
 }
 
+h3 {
+  font-size: var(--s1);
+}
+
 .center {
   box-sizing: content-box;
   margin-left: auto;
@@ -125,8 +129,11 @@ h2 {
 }
 
 .header {
-  justify-content: space-between;
   font-weight: 600;
+}
+
+.justify-space {
+  justify-content: space-between;
 }
 
 a {
@@ -135,4 +142,22 @@ a {
 
 p {
   font-size: var(--s0);
+}
+
+time {
+  font-weight: 200;
+}
+
+.tags {
+  font-weight: 400;
+  font-style: italic;
+}
+
+pre,
+code {
+  font-family: SF Mono;
+}
+
+pre {
+  overflow: auto;
 }

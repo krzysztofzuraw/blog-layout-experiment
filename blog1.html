@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example layout</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="cover">
+      <div class="cluster header justify-space">
+        <div><a href="/">Krzysztof Żuraw</a></div>
+        <div class="cluster">
+          <ul>
+            <li><a href="">About</a></li>
+            <li>Blog</li>
+            <li><a href="">RSS</a></li>
+            <li><a href="">Uses</a></li>
+            <li><a href="">Now</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack center">
+        <h1>How to setup emotion css prop to work with Parcel & TypeScript</h1>
+        <div class="cluster justify-space">
+          <time>8/8/2020</time>
+          <ul class="cluster tags">
+            <li>#emotion</li>
+            <li>#css-in-js</li>
+          </ul>
+        </div>
+        <p>
+          In this blog post I will look into how to setup
+          <a
+            href="https://emotion.sh/docs/introduction"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >Emotion</a
+          >
+          <code class="language-text">css prop</code> with
+          <a
+            href="https://parceljs.org/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >Parcel</a
+          >
+          &amp;
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            >TypeScript</a
+          >. There are two ways those tools work with each other. You can either
+          use <code class="language-text">/** @jsx jsx */</code> pragma on every
+          file you want to use <code class="language-text">css prop</code> or
+          you can tell babel to do it for you. I’m a bit lazy so I prefer the
+          second option. Below you will find a quick guide on how to do it.
+        </p>
+        <ol>
+          <li>
+            Create the <code class="language-text">.babelrc</code> file inside
+            the root of your repository. Put the following contents inside:
+          </li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore soluta quaerat ullam nesciunt numquam sit, ad aliquam libero? Tempore quibusdam praesentium unde amet quaerat nihil debitis, cupiditate magni. A!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates consectetur, deleniti voluptatum harum soluta ducimus numquam quis sed repellendus! Fugiat odio nesciunt sint quis voluptates debitis iure eligendi.</p>
+        <h2>Summary</h2>
+        <p>In this blog post, I’ve looked into how to setup Emotion <code class="language-text">css prop</code> with Parcel &amp; TypeScript. You can find
+          an example repo on my <a href="https://github.com/krzysztofzuraw/parcel-emotion-typescript" target="_blank" rel="nofollow noopener noreferrer">github</a>.</p>
+      <div class="text-align:center">Footer 2020</div>
+    </div>
+  </body>
+</html>
