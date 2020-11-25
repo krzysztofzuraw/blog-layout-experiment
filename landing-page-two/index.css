@@ -21,7 +21,10 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 header > ul {
@@ -30,5 +33,45 @@ header > ul {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 0.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.company-name {
+  font-size: 2.25rem;
+  letter-spacing: -0.1rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.secondary-action {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.primary-action {
+  background-color: var(--neutral-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  height: 60px;
+}
+
+.logo-wrapper {
+  display: flex;
 }
