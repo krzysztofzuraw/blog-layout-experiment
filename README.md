@@ -1,7 +1,7 @@
-# Blog Layout Experiment
+# CSS & HTML expermients
 
-This is a small new blog layout experiment.
-I've used components from https://every-layout.dev/.
+This is a repo where I learn about HTML & CSS based on other people layouts & designs. All credits
+go to respective authors.
 
 If you want to run it:
 
@@ -12,3 +12,7 @@ npm install
 ```shell
 npm start
 ```
+
+## Credits
+
+- [landing page two](https://dribbble.com/shots/14500872-Pipedit-Product-page)
