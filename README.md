@@ -15,4 +15,7 @@ npm start
 
 ## Credits
 
-- [landing page two](https://dribbble.com/shots/14500872-Pipedit-Product-page)
+### Landing page two
+
+- [designs](https://dribbble.com/shots/14500872-Pipedit-Product-page)
+- logo by Rafina Andra from the Noun Project
