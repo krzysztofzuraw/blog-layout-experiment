@@ -1,6 +1,7 @@
 :root {
   --background-color: #e0dbcf;
   --neutral-color: #051a18;
+  --logo-height: 60px;
 }
 
 html {
@@ -19,7 +20,12 @@ body {
   padding: 2rem;
 }
 
-header {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -27,7 +33,7 @@ header {
   gap: 1rem;
 }
 
-header > ul {
+.site-header__links {
   list-style: none;
   display: flex;
   margin: 0;
@@ -38,12 +44,7 @@ header > ul {
   font-weight: 700;
 }
 
-.company-name {
-  font-size: 2.25rem;
-  letter-spacing: -0.1rem;
-}
-
-nav {
+.site-header__nav {
   display: flex;
   gap: 2rem;
 }
@@ -63,15 +64,23 @@ nav {
   padding: 0.5rem 1rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.logo-wrapper {
+  display: flex;
+  position: relative;
 }
 
 .logo {
-  height: 60px;
+  height: var(--logo-height);
+  position: absolute;
+  transition: filter 1s;
 }
 
-.logo-wrapper {
-  display: flex;
+.logo:hover {
+  filter: blur(5px);
+}
+
+.company-name {
+  font-size: 2.25rem;
+  margin-left: var(--logo-height);
+  letter-spacing: -0.1rem;
 }
