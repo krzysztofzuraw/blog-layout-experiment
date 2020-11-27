@@ -27,6 +27,13 @@ a {
 
 .site-header {
   display: flex;
+  justify-content: center;
+}
+
+.site-header__wrapper {
+  flex-grow: 1;
+  max-width: 1500px;
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
@@ -83,4 +90,41 @@ a {
   font-size: 2.25rem;
   margin-left: var(--logo-height);
   letter-spacing: -0.1rem;
+}
+
+.site-header-button {
+  display: none;
+}
+
+@media (max-width: 925px) {
+  .site-header-button {
+    display: block;
+    order: 1;
+  }
+
+  .site-header__links {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .site-header__nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+.menu-clicked {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  top: 6rem;
+  flex-direction: column;
+  width: 90%;
+  background-color: var(--background-color);
+  padding: 1rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }

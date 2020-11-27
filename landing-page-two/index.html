@@ -9,22 +9,26 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo-wrapper">
-        <img src="logo.svg" alt="logo" class="logo" />
-        <span class="company-name">Pipedit</span>
+      <div class="site-header__wrapper">
+        <div class="logo-wrapper">
+          <img src="logo.svg" alt="logo" class="logo" />
+          <span class="company-name">Pipedit</span>
+        </div>
+        <button class="site-header-button" id="menu-button">Menu</button>
+        <ul class="site-header__links" id="menu-links">
+          <li><a href="#">Platform</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+        <nav class="site-header__nav" id="menu-navs">
+          <button class="secondary-action">Log In</button>
+          <button class="primary-action">Try it for free</button>
+        </nav>
       </div>
-      <ul class="site-header__links">
-        <li><a href="#">Platform</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Pricing</a></li>
-      </ul>
-      <nav class="site-header__nav">
-        <button class="secondary-action">Log In</button>
-        <button class="primary-action">Try it for free</button>
-      </nav>
     </header>
     <main>Content</main>
+    <script src="index.js"></script>
   </body>
 </html>
