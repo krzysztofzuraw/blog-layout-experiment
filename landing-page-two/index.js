@@ -1,6 +1,6 @@
 const button = document.getElementById("menu-button");
-const menuList = document.getElementById("menu-links");
+const mobileMenu = document.getElementById("mobile-menu");
 
 button.addEventListener("click", (e) => {
-  menuList.classList.toggle("menu-clicked");
+  mobileMenu.classList.toggle("clicked");
 });
