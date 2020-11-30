@@ -19,3 +19,4 @@ npm start
 
 - [designs](https://dribbble.com/shots/14500872-Pipedit-Product-page)
 - logo by Rafina Andra from the Noun Project
+- illustration from undraw
