@@ -99,6 +99,7 @@ a {
 .main-content {
   display: flex;
   justify-content: center;
+  padding: 0.5rem;
 }
 
 .main-content__wrapper {
@@ -131,4 +132,44 @@ a {
   align-items: center;
   max-width: 650px;
   flex: 2;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.animate {
+  animation: pulse 5s infinite;
+}
+
+@media (max-width: 925px) {
+  .main-content__wrapper {
+    flex-direction: column;
+  }
+
+  .main-text {
+    order: 2;
+  }
+
+  .illustration {
+    order: 1;
+  }
+
+  .main-text__header {
+    font-size: 2rem;
+  }
+
+  .site-header__links,
+  .site-header__wrapper {
+    justify-content: center;
+  }
 }
